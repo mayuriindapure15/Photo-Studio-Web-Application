@@ -1,0 +1,581 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RaviPhotoGraphy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styledesign.css">
+    <link rel="stylesheet" href="wedingportfio_style.css">
+    <link href='https://fonts.googleapis.com/css?family=Wire+One|Raleway:300' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+    <center>
+        <div class="logo">
+            <div class="social-links">
+                <li><a href="https://instagram.com/ravi_digital_8999078576?igshid=MzRlODBiNWFlZA=="><img id="icon" src="./imges/instaicon1.jpg" alt=""></a></li>
+                <li><a href="https://www.facebook.com/raviraj.indapure"><img  id="icon" src="./imges/faceicon1.jpg" alt=""></a></li>
+                <li><a href=""><img  id="icon" src="./imges/twittericon.jpg" alt=""></a></li>
+                <li>
+                    <a href="https://wa.me/917414942496">
+                        <img id="icon" src="./imges/whatsappicon" alt="WhatsApp" >
+                      </a>
+                </li>
+                
+                
+            </div>
+                        <img id="logo-img" src="./imges/ravilogo.png" alt="">
+                        
+                        
+                        <label   id="mode-1"    class="ui-switch">
+                            <input id="mode" type="checkbox">
+                            <div class="slider">
+                              <div class="circle"></div>
+                            </div>
+                          </label>
+                                  
+                    </div>
+                    </center>
+            <div class="nav-bar">
+                    <nav class=" navbar navbar-dark bg-dark" >
+                    <div>           
+                    <ul class="nav-links">
+                        <li><a href="index.html"><img id="homeicon" class="box1"  src="./imges/home3.png" alt=""></a>
+                        </li>
+                        <li><a class="box1" href="about.html">About Us</a></li>
+
+                        <li class="droplink" id="dropdown">
+                            <a href="photoBooth.html">PhotoBooth</a>
+                            <div class="dropdown-content">
+                                <a href="pre-wedding.html"><img  id="icon" src="./imges/prewed.png" alt="">Pre-Wedding</a>
+                                <a href="wedding.html"> <img  id="icon" src="./imges/wedding_769633.png" alt=""> Wedding </a>
+                                <a href="Engagement.html"><img   id="icon" src="./imges/rings_3656836.png" alt="">Engagement</a>
+                                <a href="coupleShoot.html"> <img id="icon" src="./imges/couplelogo.avif" alt="">Couple Shoot</a>
+                                <a href="photoBooth.html"> <img  id="icon" src="./imges/babyshower.png" alt="">Baby Shower </a>
+                                </div>
+                        </li>
+                
+                        <li class="droplink" id="dropdown">
+                            <a href="video.html">Video Gallary</a>
+                            <div class="dropdown-content">
+                                <a href="pre-video.html"><img  id="icon" src="./imges/prewed.png" alt="">Pre-Wedding Shoot</a>
+                                <a href="wedding-video.html"> <img  id="icon" src="./imges/wedding_769633.png" alt=""> Wedding Shoot</a>
+                                
+                                </div>
+                        </li>
+    
+                        
+
+                        <li class="droplink" id="dropdown">
+                            <a href="">Pricing</a>
+                            <div class="dropdown-content">
+                                <a href="pricing.html"><img id="icon" src="./imges/wedding_769633.png" alt="">Pre-Wedding Packages</a>
+                                <a href="pricing.html"><img id="icon" src="./imges/wedding_769633.png" alt="">Wedding Packages</a>
+                                <a href="engagement_package.html"> <img id="icon" src="./imges/rings_3656836.png" alt="">Engagement Packages</a>
+                                <a href="maternity.html"><img id="icon" src="./imges/babyshower.png" alt="">Baby Shower Packages</a>
+                                </div>
+                        </li>
+                        <li><a class="box1" id="contact"   href="contact.html">Contact Us</a></li>     
+                    </ul>
+                </div>
+            </nav>
+            </div>
+            <hr class="hrr1">
+            <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+
+            <a href="https://wa.me/917414942496" target="_blank" class="tooltip" >
+                <img src="./imges/whatsappicon" alt="WhatsApp"  id="WhatsApp"  style="position: fixed; bottom: 20px; left: 20px; width: 60px; height: 60px; z-index: 1000;">
+               
+              </a>
+      
+
+                
+
+    <div id="content">
+        <!-- Content will be dynamically loaded here -->
+    </div>
+
+    <script>
+        // Function to retrieve URL parameters
+        function getUrlParameter(name) {
+            name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+            var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+            var results = regex.exec(location.search);
+            return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+        }
+
+        // Function to display content based on URL parameter
+        function displayContent() {
+            var imageParam = getUrlParameter('image');
+            var contentDiv = document.getElementById('content');
+
+            // Check which image parameter is passed and display content accordingly
+            switch (imageParam) {
+                case 'image1':
+                    contentDiv.innerHTML =  `
+                    <div class="header">
+                        <center>
+                            <fieldset>
+                                <h1>Wedding-Gallery</h1>
+                                <p>Ravikiran & Gaytri wedding</p>
+                            </fieldset>
+                        </center>
+                    </div>
+                    <div class="container">
+                        <span class="slider" id="slider1"></span>
+                        <span class="slider" id="slider2"></span>
+                        <span class="slider" id="slider3"></span>
+                        <span class="slider" id="slider4"></span>
+                        <span class="slider" id="slider5"></span>
+                        <span class="slider" id="slider6"></span>
+                        <span class="slider" id="slider7"></span>
+                        <span class="slider" id="slider8"></span>
+                        <span class="slider" id="slider9"></span>
+                        <span class="slider" id="slider10"></span>
+                        <span class="slider" id="slider11"></span>
+                        <span class="slider" id="slider12"></span>
+                        <span class="slider" id="slider13"></span>
+                        <div class="imgContainer">
+                            <div class="slide_div" id="slide_1">
+                                <img src="./images/wedding/IMG_8826.JPG" alt="" class="img" id="img1">
+                                <a href="#slider1" class="button" id="button1"></a>
+                            </div>
+                            <div class="slide_div" id="slide_2">
+                                <img src="./images/wedding/IMG_8567.JPG" alt="" class="img" id="img2">
+                                <a href="#slider2" class="button" id="button2"></a>
+                            </div>
+                            <div class="slide_div" id="slide_3">
+            <img src="./images/wedding/IMG_8747.JPG" alt="" class="img" id="img3">
+            <a href="#slider3" class="button" id="button3"></a>
+           </div>
+           <div class="slide_div" id="slide_4">
+            <img src="./images/wedding/IMG_8744.JPG" alt="" class="img" id="img4">
+            <a href="#slider4" class="button" id="button4"></a>
+           </div>
+           <div class="slide_div" id="slide_5">
+            <img src="./images/wedding/IMG_8761.JPG" alt="" class="img" id="img5">
+            <a href="#slider5" class="button" id="button5"></a>
+           </div>
+           <div class="slide_div" id="slide_6">
+            <img src="./images/wedding/IMG_8767.JPG" alt="" class="img" id="img6">
+            <a href="#slider6" class="button" id="button6"></a>
+           </div>
+           <div class="slide_div" id="slide_7">
+            <img src="./images/wedding/IMG_8759.JPG" alt="" class="img" id="img7">
+            <a href="#slider7" class="button" id="button7"></a>
+           </div>
+           <div class="slide_div" id="slide_8">
+            <img src="./images/wedding/IMG_8834.JPG" alt="" class="img" id="img8">
+            <a href="#slider8" class="button" id="button8"></a>
+           </div>
+    
+           <div class="slide_div" id="slide_9">
+            <img src="./images/wedding/IMG_8803.JPG" alt="" class="img" id="img9">
+            <a href="#slider9" class="button" id="button9"></a>
+           </div>
+           <div class="slide_div" id="slide_10">
+            <img src="./images/wedding/haldi/IMG_8182.JPG" alt="" class="img" id="img10">
+            <a href="#slider10" class="button" id="button10"></a>
+           </div>
+           <div class="slide_div" id="slide_11">
+            <img src="./images/wedding/haldi/IMG_8185.JPG" alt="" class="img" id="img11">
+            <a href="#slider11" class="button" id="button11"></a>
+           </div> 
+           <div class="slide_div" id="slide_12">
+            <img src="./images/wedding/haldi/IMG_2882.JPG" alt="" class="img" id="img12">
+            <a href="#slider12" class="button" id="button12"></a>
+           </div>
+           <div class="slide_div" id="slide_13">
+            <img src="./images/wedding/haldi/IMG_8010.JPG" alt="" class="img" id="img13">
+            <a href="#slider13" class="button" id="button13"></a>
+           </div>
+
+                            
+                        </div>
+                    </div> 
+                    <center>
+    <div class="backbtn">
+        <a href="./wedding.html">BackToPortfio</a>
+    </div>
+    </center>`;
+                    break;
+                case 'image2':
+                    contentDiv.innerHTML =  `
+                    <div class="header">
+                        <center>
+                            <fieldset>
+                                <h1>Wedding-Gallary</h1>
+                                <p>Rahul & Rani wedding</p>
+                            </fieldset>
+                        </center>
+                    </div>
+                    <div class="container">
+                        <span class="slider" id="slider1"></span>
+                        <span class="slider" id="slider2"></span>
+                        <span class="slider" id="slider3"></span>
+                        <span class="slider" id="slider4"></span>
+                        <span class="slider" id="slider5"></span>
+                        <span class="slider" id="slider6"></span>
+                        <span class="slider" id="slider7"></span>
+                        <span class="slider" id="slider8"></span>
+                        <span class="slider" id="slider9"></span>
+                        <span class="slider" id="slider10"></span>
+                        <span class="slider" id="slider11"></span>
+                        <span class="slider" id="slider12"></span>
+                        <span class="slider" id="slider13"></span>
+                        <div class="imgContainer">
+                            <div class="slide_div" id="slide_1">
+                                <img src="./images/wedding/DSC_0256.JPG" alt="" class="img" id="img1">
+                                <a href="#slider1" class="button" id="button1"></a>
+                            </div>
+                            <div class="slide_div" id="slide_2">
+                                <img src="./images/wedding/DSC_0271.JPG" alt="" class="img" id="img2">
+                                <a href="#slider2" class="button" id="button2"></a>
+                            </div>
+                            <div class="slide_div" id="slide_3">
+            <img src="./images/wedding/DSC_0285.JPG" alt="" class="img" id="img3">
+            <a href="#slider3" class="button" id="button3"></a>
+           </div>
+           <div class="slide_div" id="slide_4">
+            <img src="./images/single/DSC_0315.JPG" alt="" class="img" id="img4">
+            <a href="#slider4" class="button" id="button4"></a>
+           </div>
+           <div class="slide_div" id="slide_5">
+            <img src="./images/wedding/DSC_0303.JPG" alt="" class="img" id="img5">
+            <a href="#slider5" class="button" id="button5"></a>
+           </div>
+           <div class="slide_div" id="slide_6">
+            <img src="./images/wedding/DSC_0403.JPG" alt="" class="img" id="img6">
+            <a href="#slider6" class="button" id="button6"></a>
+           </div>
+           <div class="slide_div" id="slide_7">
+            <img src="./images/wedding/DSC_0903.JPG" alt="" class="img" id="img7">
+            <a href="#slider7" class="button" id="button7"></a>
+           </div>
+           <div class="slide_div" id="slide_8">
+            <img src="./images/wedding/DSC_1013.JPG" alt="" class="img" id="img8">
+            <a href="#slider8" class="button" id="button8"></a>
+           </div>
+    
+           <div class="slide_div" id="slide_9">
+            <img src="./images/wedding/DSC_0240.JPG" alt="" class="img" id="img9">
+            <a href="#slider9" class="button" id="button9"></a>
+           </div>
+           <div class="slide_div" id="slide_10">
+            <img src="./images/wedding/haldi/DSC_0192.JPG" alt="" class="img" id="img10">
+            <a href="#slider10" class="button" id="button10"></a>
+           </div>
+           <div class="slide_div" id="slide_11">
+            <img src="./images/wedding/haldi/DSC_0210.JPG" alt="" class="img" id="img11">
+            <a href="#slider11" class="button" id="button11"></a>
+           </div> 
+           <div class="slide_div" id="slide_12">
+            <img src="./images/wedding/haldi/DSC_0619.JPG" alt="" class="img" id="img12">
+            <a href="#slider12" class="button" id="button12"></a>
+           </div>
+           <div class="slide_div" id="slide_13">
+            <img src="./images/wedding/haldi/DSC_0686.JPG" alt="" class="img" id="img13">
+            <a href="#slider13" class="button" id="button13"></a>
+           </div>  
+                        </div>
+                    </div> 
+                    <center>
+    <div class="backbtn">
+        <a href="./wedding.html">BackToPortfio</a>
+    </div>
+    </center>`;
+                    break;
+                case 'image3':
+                    contentDiv.innerHTML =  `
+                    <div class="header">
+                        <center>
+                            <fieldset>
+                                <h1>Wedding-Gallary</h1>
+                                <p>Rahul & Rani wedding</p>
+                            </fieldset>
+                        </center>
+                    </div>
+                    <div class="container">
+                        <span class="slider" id="slider1"></span>
+                        <span class="slider" id="slider2"></span>
+                        <span class="slider" id="slider3"></span>
+                        <span class="slider" id="slider4"></span>
+                        <span class="slider" id="slider5"></span>
+                        <span class="slider" id="slider6"></span>
+                        <span class="slider" id="slider7"></span>
+                        <span class="slider" id="slider8"></span>
+                        <span class="slider" id="slider9"></span>
+                        <span class="slider" id="slider10"></span>
+                        <span class="slider" id="slider11"></span>
+                        <span class="slider" id="slider12"></span>
+                        <span class="slider" id="slider13"></span>
+                        <div class="imgContainer">
+                            <div class="slide_div" id="slide_1">
+                                <img src="./images/wedding/DSC_0256.JPG" alt="" class="img" id="img1">
+                                <a href="#slider1" class="button" id="button1"></a>
+                            </div>
+                            <div class="slide_div" id="slide_2">
+                                <img src="./images/wedding/DSC_0271.JPG" alt="" class="img" id="img2">
+                                <a href="#slider2" class="button" id="button2"></a>
+                            </div>
+                            <div class="slide_div" id="slide_3">
+            <img src="./images/wedding/DSC_0285.JPG" alt="" class="img" id="img3">
+            <a href="#slider3" class="button" id="button3"></a>
+           </div>
+           <div class="slide_div" id="slide_4">
+            <img src="./images/single/DSC_0315.JPG" alt="" class="img" id="img4">
+            <a href="#slider4" class="button" id="button4"></a>
+           </div>
+           <div class="slide_div" id="slide_5">
+            <img src="./images/wedding/DSC_0303.JPG" alt="" class="img" id="img5">
+            <a href="#slider5" class="button" id="button5"></a>
+           </div>
+           <div class="slide_div" id="slide_6">
+            <img src="./images/wedding/DSC_0403.JPG" alt="" class="img" id="img6">
+            <a href="#slider6" class="button" id="button6"></a>
+           </div>
+           <div class="slide_div" id="slide_7">
+            <img src="./images/wedding/DSC_0903.JPG" alt="" class="img" id="img7">
+            <a href="#slider7" class="button" id="button7"></a>
+           </div>
+           <div class="slide_div" id="slide_8">
+            <img src="./images/wedding/DSC_1013.JPG" alt="" class="img" id="img8">
+            <a href="#slider8" class="button" id="button8"></a>
+           </div>
+    
+           <div class="slide_div" id="slide_9">
+            <img src="./images/wedding/DSC_0240.JPG" alt="" class="img" id="img9">
+            <a href="#slider9" class="button" id="button9"></a>
+           </div>
+           <div class="slide_div" id="slide_10">
+            <img src="./images/wedding/haldi/DSC_0192.JPG" alt="" class="img" id="img10">
+            <a href="#slider10" class="button" id="button10"></a>
+           </div>
+           <div class="slide_div" id="slide_11">
+            <img src="./images/wedding/haldi/DSC_0210.JPG" alt="" class="img" id="img11">
+            <a href="#slider11" class="button" id="button11"></a>
+           </div> 
+           <div class="slide_div" id="slide_12">
+            <img src="./images/wedding/haldi/DSC_0619.JPG" alt="" class="img" id="img12">
+            <a href="#slider12" class="button" id="button12"></a>
+           </div>
+           <div class="slide_div" id="slide_13">
+            <img src="./images/wedding/haldi/DSC_0686.JPG" alt="" class="img" id="img13">
+            <a href="#slider13" class="button" id="button13"></a>
+           </div>  
+                        </div>
+                    </div> 
+                    <center>
+    <div class="backbtn">
+        <a href="./wedding.html">BackToPortfio</a>
+    </div>
+    </center>`;
+                    case 'image4':
+                    contentDiv.innerHTML = '<h2>Content for Image 3</h2><p>This is the content related to Image 3.</p>';
+                    break;
+                    case 'image5':
+                    contentDiv.innerHTML =  `
+                    <div class="header">
+                        <center>
+                            <fieldset>
+                                <h1>Wedding-Gallary</h1>
+                                <p>Rohit & Arati wedding</p>
+                            </fieldset>
+                        </center>
+                    </div>
+                    <div class="container">
+                        <span class="slider" id="slider1"></span>
+                        <span class="slider" id="slider2"></span>
+                        <span class="slider" id="slider3"></span>
+                        <span class="slider" id="slider4"></span>
+                        <span class="slider" id="slider5"></span>
+                        <span class="slider" id="slider6"></span>
+                        <span class="slider" id="slider7"></span>
+                        <span class="slider" id="slider8"></span>
+                        <span class="slider" id="slider9"></span>
+                        <span class="slider" id="slider10"></span>
+                        <span class="slider" id="slider11"></span>
+                        <span class="slider" id="slider12"></span>
+                        <span class="slider" id="slider13"></span>
+                        <div class="imgContainer">
+                            <div class="slide_div" id="slide_1">
+                                <img src="./images/wedding/DSC_0179.JPG" alt="" class="img" id="img1">
+                                <a href="#slider1" class="button" id="button1"></a>
+                            </div>
+                            <div class="slide_div" id="slide_2">
+                                <img src="./images/wedding/DSC_0192.JPG" alt="" class="img" id="img2">
+                                <a href="#slider2" class="button" id="button2"></a>
+                            </div>
+                            <div class="slide_div" id="slide_3">
+            <img src="./images/wedding/DSC_0501.JPG" alt="" class="img" id="img3">
+            <a href="#slider3" class="button" id="button3"></a>
+           </div>
+           <div class="slide_div" id="slide_4">
+            <img src="./images/wedding/DSC_0558.JPG" alt="" class="img" id="img4">
+            <a href="#slider4" class="button" id="button4"></a>
+           </div>
+           <div class="slide_div" id="slide_5">
+            <img src="./images/wedding/DSC_0266.JPG" alt="" class="img" id="img5">
+            <a href="#slider5" class="button" id="button5"></a>
+           </div>
+           <div class="slide_div" id="slide_6">
+            <img src="./images/wedding/IMG_8744.JPG" alt="" class="img" id="img6">
+            <a href="#slider6" class="button" id="button6"></a>
+           </div>
+           <div class="slide_div" id="slide_7">
+            <img src="./images/wedding/DSC_0194.JPG" alt="" class="img" id="img7">
+            <a href="#slider7" class="button" id="button7"></a>
+           </div>
+           <div class="slide_div" id="slide_8">
+            <img src="./images/wedding/DSC_0195.JPG" alt="" class="img" id="img8">
+            <a href="#slider8" class="button" id="button8"></a>
+           </div>
+    
+           <div class="slide_div" id="slide_9">
+            <img src="./images/wedding/IMG_8761.JPG" alt="" class="img" id="img9">
+            <a href="#slider9" class="button" id="button9"></a>
+           </div>
+           <div class="slide_div" id="slide_10">
+            <img src="./images/wedding/DSC_0181.JPG" alt="" class="img" id="img10">
+            <a href="#slider10" class="button" id="button10"></a>
+           </div>
+           <div class="slide_div" id="slide_11">
+            <img src="./images/wedding/IMG_8767.JPG" alt="" class="img" id="img11">
+            <a href="#slider11" class="button" id="button11"></a>
+           </div> 
+           <div class="slide_div" id="slide_12">
+            <img src="./images/wedding/DSC_02661.JPG" alt="" class="img" id="img12">
+            <a href="#slider12" class="button" id="button12"></a>
+           </div>
+           <div class="slide_div" id="slide_13">
+            <img src="./images/wedding/DSC_1013.JPG" alt="" class="img" id="img13">
+            <a href="#slider13" class="button" id="button13"></a>
+           </div>
+           
+
+                            
+                        </div>
+                    </div> 
+                    <center>
+    <div class="backbtn">
+        <a href="./wedding.html">BackToPortfio</a>
+    </div>
+    </center>`;
+                    break;
+                    
+                    
+                // Add more cases as needed
+                default:
+                    contentDiv.innerHTML = '<h2>No Content Available</h2><p>No content available for the selected image.</p>';
+            }
+        }
+
+        // Call the displayContent function when the page loads
+        window.onload = displayContent;
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- <div class="header" >
+            <center>
+                <fieldset>
+                    <h1>Wedding-Gallery</h1>
+                    <p>Ravikiran & Gaytri wedding</p>
+                </fieldset>
+            
+            </center>
+
+
+            <center>
+            <div class="photos-container">
+                
+                <img src="./images/wedding/IMG_8826.JPG" alt="">
+                <img src="./images/wedding/IMG_8567.JPG" alt=""><br>
+              
+            </div>
+            <div class="photos-container">
+                <img src="./images/wedding/IMG_8747.JPG" alt="">
+                <img src="./images/wedding/IMG_8744.JPG" alt="">
+            </div>
+            <div class="photos-container">
+                <img src="./images/wedding/IMG_8747.JPG" alt="">
+                <img src="./images/wedding/IMG_8761.JPG" alt="">
+            </div>
+            <div class="photos-container">
+                <img src="./images/wedding/IMG_8747.JPG" alt="">
+                <img src="./images/wedding/IMG_8744.JPG" alt="">
+            </div>
+            <div class="photos-container">
+                <img src="./images/wedding/IMG_8834.JPG" alt="">
+                <img src="./images/wedding/IMG_9044.JPG" alt="">
+            </div>
+            <div class="photos-container-1">
+                <img src="./images/wedding/IMG_8577.JPG" alt="">
+                <img src="./images/wedding/IMG_8558.JPG" alt="">
+            </div>
+
+            </center>
+            
+
+        
+          </div>
+
+        <script src="./wedingportfio.js"></script> -->

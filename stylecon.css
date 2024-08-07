@@ -1,0 +1,346 @@
+
+.headinfo{
+    background-color: rgb(237, 230, 230);
+    width: 100%;
+    height: 130px;
+  }
+.headinfo h1{
+    padding-top: 30px ;
+    padding-left: 50px;
+    font-size: 40px;
+    font-weight: bold;
+
+}
+.headinfo p{
+    padding-left: 100px;
+    font-size: 22px;
+    color: brown;
+    font-weight: bold;
+}
+
+.contact-image img{
+    width: 1350px;
+    height: 400px;
+
+}
+
+/* contact-details */
+
+.boxes-three{		
+    max-width: 1000px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #ffffff80;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+    
+    .box {
+        width: 25%;
+        padding: 20px;
+        background-color: rgba(5, 5, 5, 0.359);
+        border-radius: 8px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+    }
+    h1 {
+        text-align: center;
+        color: #333;
+    }
+    
+    .icon {
+        /* margin-right: 0px; */
+    }
+
+
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    .input-group {
+        margin-bottom: 15px;
+    }
+    .input-group label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    .input-group input,
+    .input-group textarea,
+    .input-group select {
+        width: 700px;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+    .input-group input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        cursor: pointer;
+    }
+    .input-group input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+    .error {
+        color: red;
+        font-size: 12px;
+    }
+
+
+
+
+
+/* contact-details -ended */
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contain-1{
+    padding: 40px;
+}
+
+.formlink-1 {
+    margin-top: 30px;
+    padding: 20px;
+    border:2px solid #050109;
+   
+}
+.inputdata-1 input{
+   
+    width: 290px;
+    height: 20px;
+    border: 2px solid;
+    position: relative;
+    border-radius: 5px;
+    padding: 20px;
+    border: 5px solid #050109;
+}
+#location-1{
+    
+    width:200px ;
+}
+#service-1{
+    width: 200px;
+}
+#find-1{
+    width: 200px;
+}
+.inputdata-2 textarea{
+    
+    padding: 10px;
+    border: 2px solid;
+    border-radius: 5px;
+    border: 5px solid #050109;
+    width: 600px;
+    
+}
+.inputdata-2 {
+    padding-left:10px;
+}
+.inputdata-2 label{
+    
+    
+    padding-left: 0%;
+    font-size: 20px;
+    font-weight: 500;
+}
+.inputdata-1 {
+    flex: 1;
+    display: flex;
+    padding: 20px;
+    
+}
+#btn{
+    margin-left: 180px;
+    background-color: transparent;
+    border: 5px solid #050109;
+    width: 200px;
+    height: 40px;
+    padding: 10px;
+    font-size: 15px;
+
+    }
+    #btn:hover{
+        background-color: #050109;
+    color: white;
+    filter: drop-shadow(1px 5px 6px rgb(64, 12, 101));
+
+
+    }
+.location-1 select{
+    width: 200px;
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 15px;
+    border: 5px solid #050109;
+
+
+    
+}
+.service-1 select{
+    width: 200px;
+    padding: 10px;
+    font-size:15px;
+    border: 2px solid;
+    border-radius: 5px;
+    border: 5px solid #050109;
+
+    
+}
+.findinfo-1 select{
+    width: 200px;
+    padding: 10px;
+    font-size:15px;
+    border: 2px solid;
+    border-radius: 5px;
+    border: 5px solid #050109;
+
+    
+}
+.option-container{
+    display: flex;
+    
+}
+.location-1{
+    padding: 10px;
+}
+.service-1{
+    padding: 10px;
+}
+.findinfo-1{
+    padding: 10px;
+}
+.location-1 label{
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 50px;
+}
+.service-1 label{
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 20px;
+}
+.findinfo-1 label{
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 20px;
+
+}
+
+.contact-info{
+    padding: 10px;
+}
+
+
+.imagepart img{
+    margin-top: 10px;
+    padding: 0%;
+    width: 1400px;
+    height: 400px;
+    size: cover; 
+    animation-name: photo;
+    animation-duration: 3s;
+}
+@keyframes photo {
+    0%{opacity: 0.01;}
+    25%{opacity: 0.25;}
+    75%{opacity: 0.75;}
+   100%{opacity: 1;}
+    
+}
+
+.head h1{ 
+    /* padding: 20px; */
+    padding-left: 50px;
+    margin-top:40px;
+    font-size: 50px;
+    margin-left: 500px;
+       
+}
+.con-para p{
+    color: grey;
+    margin-top: 20px;
+    padding-left: 70px;
+    font-size: 20px;
+
+}
+.contain-main{
+    display: flex;
+}
+.map-container{
+    margin-left: 70px;
+    margin-top: 0px;
+    width: 300px;
+    height: 250px;
+    position: relative;
+    background-color: blue;
+
+}
+.circle1{
+    /* margin-top: 20px; */
+    position: relative;
+    margin-left: 30px;
+    width: 250px;
+    height: 250px;
+    border-radius: 50% ;
+    background-color: rgb(249, 41, 13);
+    /* top: 50%; 
+   left: 50%; */
+  /* transform: translate(-50%, -50%); */
+
+}
+.head-1{
+    margin-left: 80px;
+    padding:10px;
+    padding-top: 40px;
+    
+}
+.head-1 p{
+    /* margin-top: 20px; */
+}
+
+.para-map p {
+    /* margin-left: 100px; */
+    font-size: 36px;
+    color: white;
+    font-weight: bold;
+
+}
+
+.map-img{
+    
+    margin-top: 20px;
+}
+
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 40px solid #000; /* Change color as needed */
+    position: relative;
+    margin: 50px auto; /* Adjust position as needed */
+  }
+  
+ fieldset{
+    padding: 20px;
+    border: 3px solid black;
+ }
+
